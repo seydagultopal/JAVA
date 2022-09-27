@@ -1,26 +1,43 @@
-package findANumber;
+package arraysdemo;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int[] numbers =new int[] { 1,2,3,4,5,6,7,8,9};
-		int wanted=10;
-        boolean isTrue= false;
+		String student1="robin";
+		String student2="ted";
+		String student3="barney";
+		String student4="lily";
+		String student5="marshall";
+		
+		System.out.println(student1);
+        System.out.println(student2);
+        System.out.println(student3);
+        System.out.println(student4);
+        System.out.println(student5);
         
-        for (int number : numbers) {
-        	if(number == wanted) {
-        		isTrue=true;
-        		break;
-        	}
+        
+        System.out.println("---------------------");
+        
+        String[] students=new String[5];
+        students[0]="robin";
+        students[1]="ted";
+        students[2]="barney";
+        students[3]="lily";
+        students[4]="marshall";
+        
+        for(int i=0;i< students.length;i++) {
+        	System.out.println(students[i]);
+        	
         }
         
-        if(isTrue) {
-        	System.out.println("number is avaible");
-        }
-        else {
-        	System.out.println("number is not avaible");
-        }
+        System.out.println("---------------");
         
+        for(String student :students) {
+        	System.out.println(student);
+        }
+	}
         
-}
-}
+
+	}
+
+
